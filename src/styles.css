@@ -1,1 +1,498 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "ISO-8859-1";
+
+/* navbar */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F6F1F1;
+}
+
+.navbar {
+	background-color: #72d0f3;
+	padding: 1px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.navbar-links {
+	display: flex; /* Disporre gli elementi orizzontalmente */
+	gap: 20px; /* Spazio tra gli elementi */
+}
+
+.navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.nav-item {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+/* login */
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f8f9fa;
+}
+
+.login-box {
+	width: 300px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+/* font */
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 450;
+}
+
+.form-label, .form-check-label {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.form-text, .form-control {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 450;
+}
+
+/* registrazione */
+.create-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f8f9fa;
+	flex-direction: column;
+}
+
+.create-box {
+	width: 600px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	margin-top: 50px;
+}
+
+.title {
+	color: #4d5eee;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.inner-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.error-message {
+	color: red;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.logout-message {
+	color: green;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #333333;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="email"]
+	{
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 450;
+	box-sizing: border-box;
+	font-weight: 450;
+}
+
+.login-button, .see-button {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #19A7CE;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.login-button:hover {
+	background-color: #146C94;
+}
+
+.register-link {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.register-link a {
+	text-decoration: none;
+	color: #007bff;
+}
+
+.register-link a:hover {
+	text-decoration: underline;
+}
+
+/* INDEX */
+.container, .card-container {
+	display: flex;
+	margin: 20px auto;
+	max-width: 1200px;
+}
+
+.carrello {
+	margin: 20px auto;
+	max-width: 1200px;
+}
+
+/* Stili per la barra laterale */
+.sidebar {
+	width: 250px;
+	background-color: #f4f4f4;
+	padding: 20px;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	margin-right: 20px;
+	/* Spazio tra la sidebar e il contenuto principale */
+}
+
+.sidebar h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar ul li {
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.sidebar ul li i {
+	margin-right: 10px; /* Spazio tra l'icona e il testo */
+}
+
+/* Stili per il contenuto principale */
+.content {
+	flex: 1;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+.new-product {
+	background-color: white;
+	width: 300px;
+	padding: 20px;
+	margin-left: 20px;
+}
+
+.new-product .card {
+	width: 100%;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.new-product h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.new-product ul {
+	list-style: none;
+	padding: 0;
+}
+
+.new-product ul li {
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.new-product ul li i {
+	margin-right: 10px;
+}
+
+.highlight, .exp {
+	margin-top: 100px;
+}
+
+.highlight  img {
+	width: 286px;
+	height: 286px;
+}
+
+.new-product  img {
+	width: 250px;
+	height: 250px;
+	align-self: center;
+}
+
+.images-index {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.image-item {
+	position: relative;
+	flex: 0 1 calc(33.33% - 20px);
+	margin-bottom: 20px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s;
+}
+
+.image-item img {
+	width: 379.95px;
+	height: 379.95px;
+	border-radius: 8px;
+	transition: transform 0.3s;
+}
+
+.image-item:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.image-item:hover img {
+	transform: scale(1.05);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.image-item:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+}
+
+/*list magliette*/
+.dropbtn {
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content div {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/*per tutti i link*/
+.a {
+	text-decoration: none;
+	color: white;
+}
+
+.filtri {
+	font-size: medium;
+	font-weight: 600;
+}
+
+.descrizione {
+	font-weight: 700;
+}
+
+.ordine {
+	width: 50%;
+	background-color: white;
+	border-radius: 10px;
+	margin-left: 25%;
+	margin-top: 30px;
+}
+
+.ordine-btn {
+	width: 200px;
+}
+
+.ordine-top {
+	border-bottom: 1px solid #146C94;
+	background-color: #146C94;
+	color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 20px;
+	display: flex;
+	padding: 20px;
+	gap: 60px;
+}
+
+.ordine-top-admin {
+	border-bottom: 1px solid #146C94;
+	background-color: #146C94;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	padding: 20px;
+	gap: 60px;
+}
+
+.ordine-bottom {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.ordine-bottom-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+}
+
+.order-img {
+	width: 200px;
+}
+
+.ordine-bottom-top {
+	display: flex;
+}
+
+.order-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.order-bottom-top-inner {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.order-bottom-admin {
+	display: flex;
+	flex-direction: column;
+}
+
+  /* Hide default number input controls */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
+
+  
+  /* Flexbox to align buttons with input */
+  .quantity-container {
+      display: flex;
+      align-items: center;
+  }
+
+  .quantity-container input {
+      text-align: center;
+      width: 300px;
+  }
+
+  .quantity-container button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #007bff;
+      padding: 0 30px;
+      cursor: pointer;
+      transition: color 0.2s;
+  }
+
+  .quantity-container button:hover {
+      color: #0056b3;
+  }
