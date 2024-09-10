@@ -1,4 +1,4 @@
-@charset "ISO-8859-1";
+@charset "UTF-8";
 
 /* navbar */
 body {
@@ -496,3 +496,9 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
   .quantity-container button:hover {
       color: #0056b3;
   }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
