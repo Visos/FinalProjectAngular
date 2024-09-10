@@ -3,6 +3,8 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SignInComponent } from './component/sign-in/sign-in.component';
+import { SignUpComponent } from './component/sign-up/sign-up.component';
 import { CarrelloComponent } from './component/carrello/carrello.component';
 import { CreateAdminComponent } from './component/create-admin/create-admin.component';
 import { CreateUserComponent } from './component/create-user/create-user.component';
@@ -23,6 +25,8 @@ import { OrdiniAdminAllComponent } from './component/ordini-admin-all/ordini-adm
 @NgModule({
   declarations: [
     AppComponent,
+    SignInComponent,
+    SignUpComponent,
     CarrelloComponent,
     CreateAdminComponent,
     CreateUserComponent,
@@ -39,7 +43,7 @@ import { OrdiniAdminAllComponent } from './component/ordini-admin-all/ordini-adm
     ProfiloComponent,
     OrdiniAdminComponent,
     OrdiniAdminAllComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule
