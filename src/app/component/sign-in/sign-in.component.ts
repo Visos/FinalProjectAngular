@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class SignInComponent {
 
+  constructor() { }
+
+  ngOnInit() {
+
+    console.log('Sign In Component Initialized');
+  }
+
 }

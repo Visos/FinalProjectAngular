@@ -12,6 +12,8 @@ import { OrdiniAdminComponent } from './component/ordini-admin/ordini-admin.comp
 import { ProfiloComponent } from './component/profilo/profilo.component';
 import { CreateAdminComponent } from './component/create-admin/create-admin.component';
 import { NuovoProdottoComponent } from './component/nuovo-prodotto/nuovo-prodotto.component';
+import { SignInComponent } from './component/sign-in/sign-in.component';
+import { SignUpComponent } from './component/sign-up/sign-up.component';
 
 
 const routes: Routes = [
@@ -26,7 +28,9 @@ const routes: Routes = [
   { path: 'ordiniAdmin', component: OrdiniAdminComponent},
   { path: 'createAdmin', component: CreateAdminComponent },
   { path: 'profilo', component: ProfiloComponent },
-  { path: 'nuovoProdotto', component: NuovoProdottoComponent }
+  { path: 'nuovoProdotto', component: NuovoProdottoComponent },
+  { path: 'signin', component: SignInComponent},
+  { path: 'signup', component: SignUpComponent},
  /*  { path: 'logout', component: LogoutComponent } */
 
 ];
