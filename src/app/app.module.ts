@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 import {MatListModule, MatListItem} from '@angular/material/list';
@@ -30,6 +30,14 @@ import { ProdottoComponent } from './component/prodotto/prodotto.component';
 import { ProfiloComponent } from './component/profilo/profilo.component';
 import { SignInComponent } from './component/sign-in/sign-in.component';
 import { SignUpComponent } from './component/sign-up/sign-up.component';
+
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -65,7 +73,15 @@ import { SignUpComponent } from './component/sign-up/sign-up.component';
     FormsModule,
     ReactiveFormsModule,
     MatListModule,
-    MatListItem
+    MatListItem,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule,
+    NoopAnimationsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    HttpClientModule
 
   ],
   providers: [
